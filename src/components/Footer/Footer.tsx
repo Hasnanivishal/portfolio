@@ -2,6 +2,8 @@ import PaperElement, { OnFrameEvent } from '../Animations/PaperElement'
 import { addShadow, Sides, WavePath } from '../Animations/Waves/Waves'
 import './Footer.scss'
 import ContactInfo from '../basic/ContactInfo/ContactInfo'
+import { fullName } from '../../constants/Constants'
+import $t from '../../translation/Translation'
 
 function Footer() {
   return (
@@ -57,6 +59,10 @@ function Footer() {
       >
         <div id="bottom-bar-info">
           <ContactInfo />
+
+          <div className="flex-box">
+              <span className="developed-by"> Made with ♥️ by {`${fullName}`}  © 2023</span>
+          </div>
         </div>
       </PaperElement>
     </div>

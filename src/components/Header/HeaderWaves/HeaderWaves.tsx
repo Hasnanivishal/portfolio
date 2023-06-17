@@ -75,7 +75,7 @@ function HeaderWaves() {
         const text = new scope.PointText({
           point: bounds.center,
           style: paperTextStyle(scope),
-          content: 'Thiago Maia',
+          content: 'Vishal Hasnani',
         })
         text.style.fontSize = 0.04 * (window.innerHeight + window.innerWidth)
 
@@ -135,7 +135,7 @@ function HeaderWaves() {
             starX,
             Math.max(getStarBottom(), bounds.height * 0.9),
           ),
-          content: 'T',
+          content: 'V',
           style: paperTextStyle(scope),
         })
         let unionPath = new scope.Path()

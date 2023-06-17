@@ -11,7 +11,7 @@ function AboutMe() {
       <AppearFromBelow>
         <div id="about-me-content">
           <div id="container-photo-thiago">
-            <WavePhoto imageUri={'./Foto Thiago.png'} />
+            <WavePhoto imageUri={'./Photo-Vishal.jpg'} />
           </div>
           <div className="paragraph">
             {getTranslatedSentence('selfDescription')}

@@ -9,7 +9,7 @@ export const urlFinalPaper =
   'https://drive.google.com/file/d/1jj4wEeJquL0TMINlnHdRqgbUNpx6VpPB/view'
 export const urlENADE =
   'https://download.inep.gov.br/educacao_superior/enade/documentos/2018/presskit_enade2017_e_indicadores_de_qualidade.pdf'
-export const fullName = 'Thiago Pereira Maia'
+export const fullName = 'Vishal Hasnani'
 
 export const fixedStar = {
   smallRadius: 0.43951308603340994,

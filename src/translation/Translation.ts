@@ -121,9 +121,8 @@ const portugueseTranslations = {
 export type Sentences = typeof portugueseTranslations
 
 const translation: Record<string, Sentences> = {
-  'pt-BR': portugueseTranslations,
   en: {
-    developerTitle: 'Front-end Developer',
+    developerTitle: 'Front-End Developer',
     aboutMe: 'About Me',
     aboutMeSectionLabel: 'About Me',
     selfDescription: `I'm a front-end developer, with an eye for design, based in Brazil. I've worked with Databases, Python, but currently work as a web developer. My main technologies are React.Js and Angular, but I also enjoy Vue, Flutter and React Native. \nProgramming is a true passion for me, which is why I always seek for the best possible code to solve the problems in a clean and elegant way, allowing for good maintenance in the future. I also know that I make mistakes, that's why I value tools that force me to work better such as Typescript and TDD.\nI enjoy learning new technologies, and I'm able to learn very quickly. My learning process is very "hands-on", I've learned most of what I know trough building real world projects, which has given me a good understanding of why each tool is useful.`,

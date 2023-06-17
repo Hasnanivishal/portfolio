@@ -24,7 +24,6 @@ const links: Link[] = [
   { logo: AiOutlineGithub, apelido: 'GitHub', url: gitHubUrl },
   { logo: AiFillLinkedin, apelido: 'LinkedIn', url: linkedinUrl },
   { logo: ImStackoverflow, apelido: 'Stack Overflow', url: stackOverflowUrl },
-  { logo: IoLogoFacebook, apelido: 'Facebook', url: facebookUrl },
   { logo: MdEmail, apelido: 'E-mail', url: 'mailto:' + emailAddress },
 ]
 
@@ -35,11 +34,6 @@ type Props = {
 function ContactInfo({ includeDevelopedBy = true }: Props) {
   return (
     <div className="items-container">
-      {includeDevelopedBy && (
-        <span className="developed-by">{`${$t(
-          'developedBy',
-        )} ${fullName}`}</span>
-      )}
       {links.map(({ logo, apelido, url }) => {
         const Logo = logo
         return (

@@ -1,7 +1,6 @@
 .items-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
@@ -25,8 +24,4 @@
     span {
         margin: 1.5vh 1vw;
     }
-}
-
-.developed-by {
-    margin: 1.5vh 1vw 0 1vh;
 }

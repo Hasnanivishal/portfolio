@@ -107,7 +107,7 @@ function Loading({ active, time }: Props) {
             const text = new scope.PointText({
               point: starCenter,
               style: paperTextStyle(scope),
-              content: 'T',
+              content: 'V',
             })
             text.position.y += text.bounds.height / 3.3
 

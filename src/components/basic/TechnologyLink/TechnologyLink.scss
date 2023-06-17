@@ -1,0 +1,18 @@
+@import '../../../index.scss';
+
+$logo-size: 1.5em;
+.technology-link {
+    display: flex;
+    margin: 0.6em 0;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+    span {
+        line-height: $logo-size;
+    }    
+    .technology-logo-container {
+        margin-right: 0.5em;
+        @include normalized-image($logo-size);
+    }
+}

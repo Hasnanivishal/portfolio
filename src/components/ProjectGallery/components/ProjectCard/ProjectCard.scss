@@ -1,0 +1,35 @@
+@import '../../../../index.scss';
+
+.project-card {
+
+    &:not(.open){
+        background: linear-gradient(to right, $primaryColor, $accentColor);
+        border-radius: 0.4em;
+        border: solid $accentColor 1px;
+        box-shadow: var(--box-shadow);
+    }
+
+    &.open {
+        z-index: 1000;
+    }
+
+    &.container {
+        width: 29vw;
+        min-width: 40vh;
+        height: calc(28vh + 2vw);
+        margin-bottom: 10vh;
+        font-size: 150%;
+        font-weight: 800;
+    }
+
+    > .tilt-detector {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        > * {
+            transform: perspective(1000px) translateZ(50px); 
+            filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
+            pointer-events: none;
+        }
+    }
+}

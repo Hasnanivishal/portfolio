@@ -1,0 +1,55 @@
+@import '../../../../index.scss';
+$transition-curve: 1.5s ease-in-out;
+
+%full {
+    width: 100%;
+    height: 100%;
+}
+
+.open-project-wrapper {
+    @extend %full;
+    position: relative;
+    // pointer-events: none;
+}
+
+.shadow-open-project-animation {
+    position: relative;
+    filter: drop-shadow(1px 1px 0px $accentColor) drop-shadow(-1px -1px 0px $accentColor);
+    width: 100%; 
+    height: 100%;
+}
+
+.open-project {    
+    @extend %full;
+    position: absolute;
+    pointer-events: all;
+}
+
+.display-open-project {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10vh 0;
+    > div {
+        background: linear-gradient(to right, $primaryColor, $accentColor);
+    }
+}
+
+.project-info-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80vh;
+    > .closing-x {
+        z-index: 100;
+        top: 0.5em;
+        right: 0.5em;
+    }
+}

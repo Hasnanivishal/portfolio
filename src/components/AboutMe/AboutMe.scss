@@ -1,0 +1,27 @@
+#about-me {
+    margin-bottom: 7vh;
+    padding-right: calc(3vw - 2vh);
+    position: relative;
+
+    #about-me-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 1vh;
+    }
+
+    .paragraph {
+        margin: 3vh 10% 0;
+        text-align: justify;
+        line-height: 2;
+        flex: 1 1 300px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#container-photo-thiago {
+    transform: translateY(-3vw);
+    margin-top: -3vw;
+}

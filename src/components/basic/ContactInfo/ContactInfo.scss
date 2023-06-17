@@ -1,0 +1,32 @@
+.items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Slab';
+}
+
+.bottom-bar-link-container {
+    margin-top: 0.5em;
+    a {
+        color: white;
+        display: flex;
+        align-items: center;
+        max-height: 5vh;
+        text-decoration-line: none !important;
+        &:hover {
+            text-decoration-line: underline !important;
+        }
+    }
+    
+    span {
+        margin: 1.5vh 1vw;
+    }
+}
+
+.developed-by {
+    margin: 1.5vh 1vw 0 1vh;
+}

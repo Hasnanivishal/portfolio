@@ -1,0 +1,26 @@
+@mixin floating-info {
+    height: 60vh;
+    width: 60vh;
+    max-width: 80vw;
+    max-height: 80vw;
+}
+
+.fixed-loading {
+    position: fixed;
+    z-index: 200;
+    pointer-events: none;
+}
+
+.loading-container {
+    @include floating-info;
+    pointer-events: none;
+
+    .loading-gesture-detector {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        pointer-events: all;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
